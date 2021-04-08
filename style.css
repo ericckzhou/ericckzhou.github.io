@@ -248,6 +248,17 @@
     animation: twinkle 5500ms ease-in-out infinite;
     animation-delay: 500ms;
 }
+@media screen and (max-width: 850px){
+.twinklestar{
+    border: none;
+}
+}
+@media screen and (max-width: 500px){
+.twinklestar{
+    width: 1px;
+    height: 1px;
+}
+}
 .twinklestar::before, .twinklestar::after{
     position: absolute;
     content: '';
