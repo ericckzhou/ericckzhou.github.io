@@ -128,7 +128,7 @@
 }
 @media screen and (max-width: 1010px){
 #about, #projects, #contact{
-    font-size: 13px;
+    font-size: 14px;
 }
 .navbar li a{
     font-size: 14px;
@@ -136,7 +136,7 @@
 }
 @media screen and (max-width: 775px){
 #about, #projects, #contact{
-    font-size: 11px;
+    font-size: 12px;
 }
 .navbar li a {
     font-size: 14px;
@@ -150,10 +150,15 @@
 }
 @media screen and (max-width: 675px){
 #about, #projects, #contact{
+    font-size: 11px;
+}   
+}
+@media screen and (max-width: 675px){
+#about, #projects, #contact{
     font-size: 10px;
 }   
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
 #about, #projects, #contact{
     font-size: 9px;
 }   
