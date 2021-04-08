@@ -153,6 +153,11 @@
     font-size: 10px;
 }   
 }
+@media screen and (max-width: 500px){
+#about, #projects, #contact{
+    font-size: 9px;
+}   
+}
 .navbar-active {
     position: absolute;
     right: 0px;
