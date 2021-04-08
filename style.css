@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+/*landing page*/
+#landing{
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+#name {
+    margin-right: auto;
+}
+#name:hover{
+    text-shadow:0px 0px 15px rgb(255, 200, 18);
+}
+#about, #projects {
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    overflow: hidden;
+}
+#about {
+    height: 90vh;
+}
+#resume {
+    height: 10vh;
+}
+#resume a {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: rgb(228, 228, 228);
+    text-decoration: none;
+}
+#projects{
+    height: 100vh;
+    flex-direction: column;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(186, 186, 186);
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+#contact div {
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #040b1a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2vh 3vw;
+    opacity: 0.95;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.navbar{
+	display: flex;
+    list-style: none;
+
+}
+.navbar li, .navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.navbar li a {
+    color: white;
+    padding: 1vh 30px;
+    font-size: 14px;
+}
+.navbar li a:hover, .header a:hover{
+    color: white;
+    text-shadow: 0px 0px 15px rgb(255, 200, 18);
+}
+.navbar li a:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: underline;
+    box-shadow: 0 0 15px 2px rgb(255, 200, 18);
+}
+.navbar li a:active, .header a:active{
+    color: pink;
+}
+/*Burger*/
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+.burger:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 1010px){
+#about, #projects, #contact{
+    font-size: 13px;
+}
+.navbar li a{
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 775px){
+#about, #projects, #contact{
+    font-size: 11px;
+}
+.navbar li a {
+    font-size: 14px;
+}
+.burger {
+    display: block;
+}
+.navbar {
+    display: none;
+}
+}
+@media screen and (max-width: 675px){
+#about, #projects, #contact{
+    font-size: 10px;
+}   
+}
+.navbar-active {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #040b1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+.sub-about, .about-me{
+    padding-left: 2vw;
+}
+.sub-about ul, .about-me ul{
+    padding-left: 2vw;
+    list-style: circle;
+}
+.sub-about ul li, .about-me ul li{
+    padding: 2px 0;
+}
+.sub-about{
+    width: 33vw;
+}
+.about-me{
+    width: 67vw;
+}
+.center{
+    text-align: center;
+}
+/*Projects*/
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.project-name, .project-desc{
+    padding: 1vh 3vw;
+    margin-bottom: 1vh;
+}
+.project-name{
+    width: 50%;
+    text-align: center;
+}
+.project-desc{
+    width: 50%;
+}
+.project-desc ul{
+    list-style: circle;
+}
+.project-desc ul li {
+    margin-left: 3vw;
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+@media screen and (max-width: 600px){
+::-webkit-scrollbar {
+    width: 4px;
+}
+}
+::-webkit-scrollbar-track { 
+    background: #04183d
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fcbd1e; 
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 225, 0);
+}
+/*Twinkle Stars*/
+.twinklestar{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 22vh;
+    right: 35vw;
+    background: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    animation: twinkle 5500ms ease-in-out infinite;
+    animation-delay: 500ms;
+}
+.twinklestar::before, .twinklestar::after{
+    position: absolute;
+    content: '';
+}
+.twinklestar:nth-child(1){
+    top: 15vh;
+    left: 15vw;
+    animation-delay: 1000ms;
+}
+.twinklestar:nth-child(2){
+    top: 20vh;
+    right: 10vw;
+    animation-delay: 500ms;
+}
+.twinklestar:nth-child(3){
+    top: 45vh;
+    right: 15vw;
+    animation-delay: 2000ms;
+}
+.twinklestar:nth-child(4){
+    top: 35vh;
+    left: 25vw;
+    animation-delay: 1500ms;
+}
+.twinklestar:nth-child(5){
+    top: 50vh;
+    left: 10vw;
+    animation-delay: 2000ms;
+}
+.twinklestar:nth-child(6){
+    top: 12vh;
+    left: 35vw;
+    animation-delay: 500ms;
+}
+/*Shooting Stars*/
+.shootingstar{
+    position: absolute;
+    top: 10vh;
+    right: 35vw;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(45deg, #5f91ff, rgba(0,0,255,0));
+    filter: drop-shadow(0 0 6px white);
+    animation: tail 4500ms ease-in-out infinite, shooting 4500ms ease-in-out infinite;
+    transform: rotateZ(-5deg);
+    animation-delay: 1000ms;
+}
+.shootingstar::before, .shootingstar::after{
+    position: absolute;
+    content: '';
+    left: 0vw;
+    height: 2px;
+    width: 30px;
+    background: linear-gradient(45deg,rgba(0,0,255,0) #5f91ff, rgba(0,0,255,0));
+    border-radius: 100%;
+    transform: translateX(-50%) rotateZ(-5deg);
+    animation: shining 4500ms ease-in-out infinite;
+    animation-delay: 500ms;
+}
+.shootingstar::after{
+    transform: translateX(50%) rotateZ(-5deg);
+}
+.shootingstar:nth-child(1){
+    top: 8vh;
+    right: 5vw;
+    animation-delay: 2500ms;
+}
+.shootingstar:nth-child(1)::before, .shootingstar:nth-child(1)::after{
+    animation-delay: 500ms;
+}
+.shootingstar:nth-child(2){
+    top: 20vh;
+    right: 15vw;
+    animation-delay: 2000ms;
+}
+.shootingstar:nth-child(2)::before, .shootingstar:nth-child(2)::after{
+    animation-delay: 500ms;
+}
+.shootingstar:nth-child(3){
+    top: 30vh;
+    right: 5vw;
+    animation-delay: 3500ms;
+}
+.shootingstar:nth-child(3)::before, .shootingstar:nth-child(3)::after{
+    animation-delay: 500ms;
+}.shootingstar:nth-child(4){
+    top: 25vh;
+    right: 35vw;
+    animation-delay: 2250ms;
+}
+.shootingstart:nth-child(4)::before, .shootingstar:nth-child(4)::after{
+    animation-delay: 500ms;
+}
+/*Animations for Shooting Stars*/
+@keyframes tail{
+0% {
+    width: 0;
+}
+30% {
+    width: 100px;
+}
+100% {
+    width: 0;
+}
+}
+@keyframes shining{
+0%{
+    width: 0;
+}
+50% {
+    width: 30px;
+}
+100% {
+    width: 0;
+}
+}
+@keyframes shooting{
+    0%{
+        transform: translateX(0) rotateZ(-5deg);
+    }
+    100% {
+        transform: translateX(-700px) translateY(250px) rotateZ(-30deg);
+    }
+}
+@keyframes twinkle{
+50%{
+    background-color: yellow;
+    box-shadow: 0 0 15px 4px rgb(255, 200, 18);
+}
+}
+html, body{
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+}
+a {
+    color: blue;
+}
+a:hover{
+    color: pink;
+}
+a:active{
+    color: green;
+}
