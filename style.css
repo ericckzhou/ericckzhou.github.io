@@ -303,28 +303,33 @@
     position: absolute;
     top: 10vh;
     right: 35vw;
-    width: 100px;
+    width: 5vw;
     height: 2px;
     background: linear-gradient(45deg, #5f91ff, rgba(0,0,255,0));
-    filter: drop-shadow(0 0 6px white);
+    filter: drop-shadow(0 0 1vw white);
     animation: tail 4500ms ease-in-out infinite, shooting 4500ms ease-in-out infinite;
     transform: rotateZ(-5deg);
     animation-delay: 1000ms;
+}
+@media screen and (max-width: 500px) {
+.shootingstar{
+    height: 1.5px;
+}
 }
 .shootingstar::before, .shootingstar::after{
     position: absolute;
     content: '';
     left: 0vw;
     height: 2px;
-    width: 30px;
+    width: 2vw;
     background: linear-gradient(45deg,rgba(0,0,255,0) #5f91ff, rgba(0,0,255,0));
     border-radius: 100%;
-    transform: translateX(-50%) rotateZ(-5deg);
+    transform: translateX(-50vw) rotateZ(-5deg);
     animation: shining 4500ms ease-in-out infinite;
     animation-delay: 500ms;
 }
 .shootingstar::after{
-    transform: translateX(50%) rotateZ(-5deg);
+    transform: translateX(50vw) rotateZ(-5deg);
 }
 .shootingstar:nth-child(1){
     top: 8vh;
@@ -363,7 +368,7 @@
     width: 0;
 }
 30% {
-    width: 100px;
+    width: 7vw;
 }
 100% {
     width: 0;
@@ -374,7 +379,7 @@
     width: 0;
 }
 50% {
-    width: 30px;
+    width: 2vw;
 }
 100% {
     width: 0;
@@ -385,13 +390,31 @@
         transform: translateX(0) rotateZ(-5deg);
     }
     100% {
-        transform: translateX(-700px) translateY(250px) rotateZ(-30deg);
+        transform: translateX(-60vw) translateY(25vh) rotateZ(-30deg);
     }
+}
+@media screen and (max-width: 500px){
+@keyframes shooting{
+    0%{
+        transform: translateX(0) rotateZ(-5deg);
+    }
+    100% {
+        transform: translateX(-60vw) translateY(15vh) rotateZ(-30deg);
+    }
+}
 }
 @keyframes twinkle{
 50%{
     background-color: yellow;
     box-shadow: 0 0 15px 4px rgb(255, 200, 18);
+}
+}
+@media screen and (max-width: 750px){
+@keyframes twinkle{
+50%{
+    background-color: yellow;
+    box-shadow: 0 0 8px 2px rgb(255, 200, 18);
+}
 }
 }
 html, body{
