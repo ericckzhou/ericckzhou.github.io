@@ -201,11 +201,11 @@
     margin-bottom: 1vh;
 }
 .project-name{
-    width: 50%;
+    width: 33%;
     text-align: center;
 }
 .project-desc{
-    width: 50%;
+    width: 67%;
 }
 .project-desc ul{
     list-style: circle;
