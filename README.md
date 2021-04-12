@@ -1,2 +1,3 @@
 # ericckzhou.github.io
-portfolio site
+# Dec 2020 -> Present (Apr 2021)
+# Portfolio Site
