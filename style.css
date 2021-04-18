@@ -135,7 +135,7 @@
 }
 }
 @media screen and (max-width: 775px){
-#about, #projects, #contact, #resume{
+#about, #projects, #contact, #resume, .navbar{
     font-size: 12px;
 }
 .navbar li a {
