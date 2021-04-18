@@ -6,3 +6,4 @@
 - Add style HTML elements (education & projects)
 - Add text to landing page.
 - Draw constellation on landing page to create my initials.
+- Clean HTML code.
