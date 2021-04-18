@@ -127,7 +127,7 @@
     cursor: pointer;
 }
 @media screen and (max-width: 1010px){
-#about, #projects, #contact{
+#about, #projects, #contact, #resume{
     font-size: 14px;
 }
 .navbar li a{
@@ -135,7 +135,7 @@
 }
 }
 @media screen and (max-width: 775px){
-#about, #projects, #contact{
+#about, #projects, #contact, #resume{
     font-size: 12px;
 }
 .navbar li a {
@@ -149,17 +149,17 @@
 }
 }
 @media screen and (max-width: 675px){
-#about, #projects, #contact{
+#about, #projects, #contact, #resume{
     font-size: 11px;
 }   
 }
 @media screen and (max-width: 675px){
-#about, #projects, #contact{
+#about, #projects, #contact, #resume{
     font-size: 10px;
 }   
 }
 @media screen and (max-width: 400px){
-#about, #projects, #contact{
+#about, #projects, #contact, #resume{
     font-size: 9px;
 }   
 }
