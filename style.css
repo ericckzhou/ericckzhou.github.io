@@ -35,8 +35,11 @@
     height: 90vh;
 }
 #resume {
-    display: relative;
+    display: flex;
     height: 10vh;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
 }
 #resume a {
     border: 2px solid black;
@@ -44,7 +47,6 @@
     border-radius: 5px;
     background-color: rgb(228, 228, 228);
     text-decoration: none;
-    bottom: 10px;
 }
 #projects{
     height: 100vh;
