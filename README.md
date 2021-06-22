@@ -1,4 +1,4 @@
-# Site: https://ericckzhou.tech / https://ericckzhou.github.io
+# Site: https://ericckzhou.tech (<- use this link) / https://ericckzhou.github.io
 # Old site: https://github.com/ericckzhou/old-website
 # Date: Dec 2020 -> Present 
 # Portfolio Site
